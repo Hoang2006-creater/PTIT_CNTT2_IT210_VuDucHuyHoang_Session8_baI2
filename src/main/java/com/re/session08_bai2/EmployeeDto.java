@@ -1,0 +1,16 @@
+package com.re.session08_bai2;
+
+import jakarta.validation.constraints.*;
+
+public class EmployeeDto {
+
+    @Min(value = 18, message = "Tuổi phải >= 18")
+    @Max(value = 60, message = "Tuổi phải <= 60")
+    private int age;
+
+    @Email(message = "Email không hợp lệ")
+    @NotBlank(message = "Email không được để trống")
+    private String email;
+
+    // getters, setters
+}

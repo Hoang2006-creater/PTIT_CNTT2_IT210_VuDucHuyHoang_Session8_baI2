@@ -12,5 +12,19 @@ public class EmployeeDto {
     @NotBlank(message = "Email không được để trống")
     private String email;
 
-    // getters, setters
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
